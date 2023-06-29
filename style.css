@@ -1,0 +1,360 @@
+body{
+	margin: 0vh;
+}
+section{
+	height: auto;
+	width: 85vw;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	align-items: center;
+}
+section:nth-child(2n){
+	background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+/* starting of header section */
+#body-header{
+	height: 75vh;
+	width: 100%;
+	opacity: 0.8;
+	background-image:url(images/mac_mouse2.avif);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+} 
+.navbar{
+	list-style: none;
+	text-align: center;
+	margin: auto;
+	padding-top: 5vh;
+	padding-left: 0vh;
+}
+.navbar li{
+	display: inline-block;
+	margin-right: 1vh;
+}
+.navbar li a{
+	color: black;
+	text-decoration: none;
+	transition: color 0.3s;
+	font-size: 4vh;
+}
+.nav-menu li a:hover{
+	color: #e3dcc8;
+	padding-right: 4px;
+	padding-left: 4px;
+	background-color: black;
+	border-bottom: 4px solid white;
+}
+
+#my-name{
+	font-size: 10vh;
+	font-family: cursive;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 0.5vh;
+}
+#social-container{
+	margin-top: 5vh;
+}
+.social-icon li a img{
+	padding: 2vh;
+	border-radius: 50%;
+	height: 5vh;
+	width: 5vh;
+	margin-top: -3vh;
+}
+.social-icon li a img:hover{
+	box-shadow: 0px 0px 6px 4px black;
+	box-sizing: 2vh;
+}
+/* end of header section */
+
+
+/*starting of about section */
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+#my-image img{
+	width: 20vh;
+	height: 20vh;
+	border-radius: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -5vh;
+	display: block;
+	box-shadow:  0px 0px 6px 4px black;
+}
+#my-image img:hover{
+	width: 30vh;
+	height: 30vh;
+}
+#about-content{
+	font-size: 3.5vh;
+	text-align: center;
+	margin-right: 25%;
+	margin-left: 25%;
+	font-family: sans-serif;
+	color: #e58e50;
+}
+/* end of about section */
+
+/*start of skill section*/
+
+#skills:hover{
+	
+	background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+}
+.section-header h1{
+	font-size: 2.3rem;
+}
+#skill-body{
+	height: 75vh;
+	width: 75vw;
+	border: 4px;
+	border-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.skill-progress{
+	width: 40rem;
+	height: 2rem;
+	background-color: lightgrey;
+	border-radius: 0.8rem;
+}
+.skill-name span{
+	color: white;
+	text-size-adjust: auto;
+	margin-left: 20px;
+}
+
+#s1{
+	height: 100%;
+	width: 70%;
+	background-color: blue;
+	border-radius: 20px 0px 0px 20px;
+}
+#s2{
+	height: 100%;
+	width: 60%;
+	background-color: blueviolet;
+	border-radius: 20px 0px 0px 20px;
+}
+#s3{
+	height: 100%;
+	width: 40%;
+	background-color: #af2c92;
+	border-radius: 20px 0px 0px 20px;
+}
+#s4{
+	height: 100%;
+	width: 80%;
+	background-color: blue;
+	border-radius: 20px 0px 0px 20px;
+}
+#s5{
+	height: 100%;
+	width: 70%;
+	background-color: blueviolet;
+	border-radius: 20px 0px 0px 20px;
+}
+#s6{
+	height: 100%;
+	width: 55%;
+	background-color: #af2c92;
+	border-radius: 20px 0px 0px 20px;
+}
+/*skill section end here*/
+/*experience section start here*/
+.timeline{
+	height: auto;
+	width: 75%;
+	position: relative;
+	contain-overflow: auto;
+	
+}
+.timeline-box{
+	width: 40%;
+	position: relative;
+	margin: 5px;
+	margin-top: 2rem;
+	left: 5%;
+	border: 2px solid black;	
+	}
+	.timeline-box h3{
+		font-size: 1rem;
+		color: #2857a4;
+		margin-bottom: -1.5rem;
+	}
+	.timeline-box h6{
+		font-size: 0.8rem;
+		color: #403066;
+		margin-bottom: -1rem;
+	}
+	.timeline-box p{
+		color: #005aff;
+		font-weight: bold;
+		font-size: 0.8rem;
+	}
+
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+.timeline-box:nth-child(2n-1)::after{
+	content: '';
+	position: absolute;
+	top: 25%;
+	right: -12.5%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top: 25%;
+	left: -9.5%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index: 1;
+}
+.timeline-divider{
+	position: absolute;
+	height: 75%;
+	width: 0;
+	border:3px dashed #0096fa6b;
+	top: 10%;
+	left: 50%;
+}
+.timeline-traveller{
+	position: sticky;
+	top: 25%;
+	z-index: 2;
+}
+
+/*experience section end here*/
+/*portfolio section start here*/
+#port-box{
+	width: 85%;
+	height: auto;
+	
+}
+.port-box-item{
+	width: 85%;
+	height: auto;
+	min-height: 100px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.port-box-item:hover{
+	width: 95%;
+	height: auto;
+	min-height: 100px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 10px 10px 8px #888888;
+	background-color: #9e9b9b29;
+
+}
+.port-box-img{
+	display: inline-block;
+	height: 100%;
+	width: 30%;
+	margin-right: 5%;
+}
+.port-box-content{
+	display: inline-block;
+	width: 60%;
+
+}
+
+.port-box-img img{
+	height: 100px;
+	width: 100%;
+	min-height: 100px;
+	background-size: cover;
+	margin: 0;
+	
+}
+.port-box-content h3{
+		font-size: 1.1rem;
+		color: #2857a4;
+		margin-bottom: -1.5rem;
+		text-decoration: none;
+	}
+	.port-box-content h6{
+		font-size: 0.9rem;
+		color: #403066;
+		margin-bottom: -1rem;
+	}
+	.port-box-content p{
+		color: #005aff;
+		font-weight: bold;
+		font-size: 0.8rem;
+	}
+	#port-box a{
+		text-decoration: none;
+	}
+
+/*portfolio section end here*/
+/*contact section start here*/
+#contact{
+	background-image: linear-gradient(to right,#2857a4,#403066);
+	margin-bottom: 10%;
+}
+#contact:hover{
+	background-image: linear-gradient(to right,#403066,#2857a4);
+}
+#contact-box{
+	height: auto;
+	width: 85%;
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact-box-item{
+	width: 100%;
+}
+.contact-box-details:hover{
+	border:2px solid blueviolet;
+	box-shadow: 10px 10px 8px #888888;
+	margin-bottom: 2rem;
+}
+.contact-box-details img{
+	width: 4rem;
+	height: 4rem;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.contact-box-details p{
+	font-size: 2rem;
+	text-align: center;
+	overflow-wrap: break-word;
+	color: #769b1d;
+}
+/*contact section end here*/
