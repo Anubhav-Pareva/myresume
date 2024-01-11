@@ -12,6 +12,21 @@
 <body>
 	<header id="body-header">
 		<nav>
+			<div id="navigation">
+				<div id="menu" onclick="onClickMenu()">
+					<div id="bar1" class="bar"></div>
+					<div id="bar2" class="bar"></div>
+					<div id="bar3" class="bar"></div>
+				</div>
+				<ul class="nav" id="nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 			<ul class="navbar nav-menu">
 				<li><a href="#about">About</a></li>
 				<li><a href="#skills">Skills</a></li>
@@ -52,7 +67,11 @@
 				</h1>
 				<div id="skill-body">
 					<div class="skill-progress">
-						<div id="s1"><div class="skill-name"><span>Java 70%</span></div></div>
+						<div class="skill-img-container">
+							<img src="images/HTML5_logo_and_wordmark.svg.png" alt="HTML"/>
+						</div>
+						<p>HTML</p>
+						<div id="s1"><div class="skill-name"><span>70%</span></div></div>
 					</div>
 					<div class="skill-progress">	
 						<div id="s2"><div class="skill-name"><span>DSA 60%</span></div></div>
@@ -78,9 +97,9 @@
 				<img src="images/experience.png"> EXPERIENCE
 			</h1>	
 			<div class="timeline">
-				<div class="timeline-box"><h3>Fresher</h3>
-					<h6>No Experience</h6>
-					<p>My journey is just begin. But i am excited to take challenges.</p>
+				<div class="timeline-box"><h3>6 Months Intership</h3>
+					<h6>Build With Innovation(BWI)</h6>
+					<p>Joined as Junior Front-End WebDeveloper</p>
 				</div>
 				
 				<div class="timeline-divider">
@@ -99,7 +118,7 @@
 				<div class="timeline-box">
 					<h3>B.Tech(CSE)</h3>
 					<h6>Dr.Akhilesh Das Gupta Institute of Technology & Management</h6>
-					<p>*Currently i am in final year of my graduation.</p>
+					<p>*Complete my gradution in 2023.</p>
 				</div>
 
 				<div class="timeline-box">
@@ -133,26 +152,37 @@
 					<img src="images/portfolio.png">  PORTFOLIO
 				</h1>
 				<div id="port-box">
-						<a href="https://anubhav-pareva.github.io/my-site/"><div class="port-box-item">
-							<div class="port-box-img"><img src="images\resume.png"></div>
-							<div class="port-box-content"><h3>Simple Resume</h3>
-								<h6>Description</h6>
-								<p> An another 
- simple resume web pages. Built using basic HTML and CSS.</p></div>
+						<a href="https://gourmetbaklava.in/"><div class="port-box-item">
+							<div class="port-box-img"><img src="images\Baklaava_Logo.avif"></div>
+							<div class="port-box-content"><h3>The Gourmet Baklava</h3></div>
 						</div></a>
-
+						<a href="https://crystalicious.co/"><div class="port-box-item">
+							<div class="port-box-img"><img src="images\crystalicious.avif"></div>
+							<div class="port-box-content"><h3>crystalicious</h3></div>
+						</div></a>
+						<a href="https://daya-kishan.myshopify.com/"><div class="port-box-item">
+							<div class="port-box-img"><img src="images\dayakishan_logoImg_1.avif"></div>
+							<div class="port-box-content"><h3>Daya-Kishan</h3></div>
+						</div></a>
+						<a href="https://baziger.com/"><div class="port-box-item">
+							<div class="port-box-img"><img src="images\Asset_15_72x_4b42b1ec-0bee-4de7-8919-8b3b33d46c11_500x.avif"></div>
+							<div class="port-box-content"><h3>Baziger</h3></div>
+						</div></a>
+						<a href="https://collectorsedition.in/"><div class="port-box-item">
+							<div class="port-box-img"><img src="images\Copy_of_CE-logo-1-CMYK-colour.avif"></div>
+							<div class="port-box-content"><h3>Collector Edition</h3></div>
+						</div></a>
 						<a href="https://anubhav-pareva.github.io/tindog-find-love/"><div class="port-box-item">
 							<div class="port-box-img"><img src="images\tindog.png"></div>
-							<div class="port-box-content"><h3>Tindog</h3>
-							<h6>Description</h6>
-							<p>A website that help you in finding a good life partner for your dogs. With responsive design approach.</p></div>
-					</div></a>
-
+							<div class="port-box-content"><h3>Tindog</h3></div>
+						</div></a>
+						<a href="https://anubhav-pareva.github.io/my-site/"><div class="port-box-item">
+							<div class="port-box-img"><img src="images\resume.png"></div>
+							<div class="port-box-content"><h3>Simple Resume</h3></div>
+						</div></a>
 						<a href="https://anubhav-pareva.github.io/CodeGene/"><div class="port-box-item">
 							<div class="port-box-img"><img src="images\codegene.png"></div>
-							<div class="port-box-content"><h3>CodeGene</h3>
-							<h6>Description</h6>
-							<p>CodeGene which help you in learning different programing language from scratch. And help you finding your dream job.</p></div>
+							<div class="port-box-content"><h3>CodeGene</h3></div>
 						</div></a>
 				</div>
 		</section>
@@ -176,5 +206,6 @@
 			
 		</section>
 	</main>
+	<script src="script.js"></script>
 </body>
 </html>
